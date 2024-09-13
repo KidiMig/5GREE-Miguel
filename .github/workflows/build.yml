@@ -9,3 +9,7 @@ jobs:
             uses: actions/checkout@v3
           - name: installer NodeJS
             uses: actions/setup-node@v3
+          - name: installer les packages
+            run: npm install
+          - name: lancer node js
+            run: npm run build
