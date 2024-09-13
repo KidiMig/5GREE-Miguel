@@ -16,6 +16,7 @@ jobs:
 
     
     builds:
+      needs: test
       runs-on: ubuntu-latest
       steps:
           - name: la famille
