@@ -1,0 +1,10 @@
+name: build
+on: push
+
+jobs: 
+    builds:
+      runs-on: ubuntu-latest
+      steps:
+          - name: la famille
+            uses: actions/checkout@v3
+          
