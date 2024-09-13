@@ -2,6 +2,19 @@ name: build
 on: push
 
 jobs: 
+    test:
+      runs-on: ubuntu-latest
+      steps:
+          - name: la famille
+            uses: actions/checkout@v3
+          - name: installer NodeJS
+            uses: actions/setup-node@v3
+          - name: installer les packages
+            run: npm install
+          - name: lancer la politique de test disponible
+            run: npm test
+
+    
     builds:
       runs-on: ubuntu-latest
       steps:
