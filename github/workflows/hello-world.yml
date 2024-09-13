@@ -1,1 +1,9 @@
 name: hello-world
+on: push 
+
+jobs:
+
+print:
+      run-on: ubuntu-latest
+      steps: 
+        - run: echo "Hello Word!" 
